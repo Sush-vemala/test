@@ -1,0 +1,16 @@
+pipeline{
+	agent any
+	stages{
+		stage("stage1"){
+			steps{
+				echo "stage one";
+			}
+		}
+		stage("stage2"){
+		    steps{
+		        sh "pwd"
+		        sh "ls -ltr"
+		    }
+		}
+	}
+}
